@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="favicon.ico">
+
+        <title>Icínga2 Startpage</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Custom styles for this template -->
+    </head>
+    <!-- NAVBAR
+    ================================================== -->
+    <body>
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Icinga2 startpage</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#Strukturdiagramm">Strukturdiagramm</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Komponenten<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#Komponenten">Komponenten</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">Unterpunkte</li>
+                                        <li><a href="#icinga2">Icinga2</a></li>
+                                        <li><a href="#icingaweb2">Icingaweb2</a></li>
+                                        <li><a href="#icingaweb2">Icingaweb2-Module Director</a></li>
+                                        <li><a href="#icingaweb2">Icingaweb2-Module Graphite</a></li>
+                                        <li><a href="#idodb">IDODB-MySQL</a></li>
+                                        <li><a href="#graphite">Graphite</a></li>
+                                        <li><a href="#grafana">Grafana</a></li>
+                                        <li><a href="#mysql">MySQL</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#Links">Links</a></li>              
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <!-- Spacer between NavBar and two coloumn layout
+        ================================================== -->
+        <div class="container">
+            <p style="height: 70px"></p>
+        </div>
+
+        <!-- Inhaltscontainer -->
+        <div class="container">
+            <!-- zwei Spalten unter der NavBar -->
+            <div class="row">
+                <div class="col-lg-2">
+                    <p></p>
+                </div>
+                <!-- Icingaweb2 -->
+                <div class="col-lg-3">
+                    <a href="icingaweb2/" role="button">
+                        <img class="img-rounded" src="assets/icingaweb2_thumb.PNG" alt="Icingaweb2 thumbnail image" width="260" height="176">
+                    </a>
+                    <h2>Icingaweb2</h2>
+                    <p>Icingaweb2 ist die neue Oberfläche als Ersatz für die Icinga ClassicUI. Hier können die Inforamtionen zu den Hosts und Services eingesehen werden. 
+                        Zusätzlich lassen sich mit dem Icinga2 Director neue Hosts und Services anlegen.</p>
+                    <p><a class="btn btn-default" href="icingaweb2/" role="button">Icingaweb2 öffnen &raquo;</a></p>
+                </div>
+                <div class="col-lg-2">
+                    <p></p>
+                </div>
+                <!-- Grafana -->
+                <div class="col-lg-3">
+                    <a href="grafana/" role="button">
+                        <img class="img-rounded" src="assets/grafana_thumb.PNG" alt="Grafana thumbnail image" width="260" height="176">
+                    </a>
+                    <h2>Grafana</h2>
+                    <p>Grafana ist ein Graphingtool zum generieren von Graphen aus verschiedenen Datenquellen. In Grafana kann auf sämtliche Daten aus Icinga2 zurückgegriffen werden.</p>
+                    <p><a class="btn btn-default" href="grafana/" role="button">Grafana öffnen &raquo;</a></p>
+                </div>
+                <div class="col-lg-2">
+                    <p></p>
+                </div>
+            </div>
+
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-12">
+                    <a id="Strukturdiagramm"></a>
+                    <h2 class="featurette-heading">Strukturdiagramm.<span class="text-muted"> Wie sind welche Komponenten miteinander verbunden?</span></h2>
+                    <p class="lead">Icinga2 ist eine Weiterentwicklung des Nagios-Forks Icinga 1. Seit der Version 2 hat so einiges Verändert. 
+                        Icinga2 ist ein sehr Variables automatisierbares Monitoringsystem. Icinga2 ist Modular aufgebaut und kann daher leicht erweitert werden. 
+                        Grundlegende Funktionen wie Notifications, API, Checker etc. sind ebenfalls als Module realisiert.</p>
+                    <p class="img-rounded text-center">
+                        <img src="" alt="Strukturdiagramm einer Icinga2-Lösung" width="800" height="600">
+                    </p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-12">
+                    <a id="Komponenten"></a>
+                    <h2 class="featurette-heading">Komponenten.<span class="text-muted"> Was war jetzt nochmal was?</span></h2>
+                    <p class="lead">
+                        Die Gesamtstruktur besteht aus den verschiedensten Komponenten, die zum Beispiel Performancedaten graphisch darstellen, Datenbanken bereitstellen etc.
+                    </p>
+                    <a id="icinga2"></a>
+                    <h3 class="featurette-heading">Icinga2</h3>
+                    <p class="left">
+                        Das Monitoringsystem Icinga2 ist sehr variable und gut automatisierbar. Speziell mit der API-Funktion lassen sich einige Konfigurationen automatisieren.
+                    </p>
+                    <a id="icingaweb2"></a>
+                    <h3 class="featurette-heading">Icingaweb2</h3>
+                    <p class="left">
+                        Icingaweb2 ist die moderne Weboberfläche für Icinga2. Ähnlich wie die ClassicUI können darin die Status der Hosts und Services abgerufen werden. 
+                        Durch Module kann Icingaweb2 erweitert werden, wie zum Beispiel Performancedatenanzeige durch das Graphite-Modul.
+                    </p>
+                    <a id="icingaweb2-director"></a>
+                    <h3 class="featurette-heading">Icingaweb2-Module Director</h3>
+                    <p class="left"></p>
+                    <a id="icingaweb2-graphite"></a>
+                    <h3 class="featurette-heading">Icingaweb2-Module Graphite</h3>
+                    <p class="left"></p>
+                    <a id="idodb"></a>
+                    <h3 class="featurette-heading">IDODB-MySQL</h3>
+                    <p class="left"></p>
+                    <a id="graphite"></a>
+                    <h3 class="featurette-heading">Graphite</h3>
+                    <p class="left">
+                        Graphite ist für die Speicherung von Performancedaten in einer Datenbank und für die graphische Bereitstellung einer Repräsentation zuständig.
+                    </p>         
+                    <a id="grafana"></a>
+                    <h3 class="featurette-heading">Grafana</h3>
+                    <p class="left">
+                        Als graphisches Frontend für die Performancedaten kann Grafana genutzt werden. 
+                        Es bietet dem Benutzer eine graphische Benutzeroberfläche, um Daten aus Quellen jeglicherArt graphisch aufzubereiten.
+                        Auch lassen sich verschiedene Daten gegenüberstellen. Damit ist Grafana ein sehr schönes Analysetool für Performancedaten.
+                    </p>
+                    <a id="mysql"></a>
+                    <h3 class="featurette-heading">MySQL</h3>
+                    <p class="left">Als Datenbanksystem für die Performancedaten, die Icingaweb2-Applikation, die Grafana-Applikation und die Graphite-Daten wird ein MySQL-Server eingesetzt.</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-12">
+                    <a id="Links"></a>
+                    <h2 class="featurette-heading">Links.<span class="text-muted"> Wo kann ich noch nachschauen?</span></h2>
+                    <p class="container">
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>Icinga2-Webseite: </b> https://www.icinga.com/<br>
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>Icingaweb2-Webseite:</b> https://www.icinga.com/products/icinga-web-2/<br>
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>Icingaweb2-Module Director:</b> https://github.com/Icinga/icingaweb2-module-director/blob/master/README.md<br>
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>Icingaweb2-Module Graphite:</b> https://github.com/Icinga/icingaweb2-module-graphite<br>
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>Grafana-Webseite:</b> http://grafana.org/<br>
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>Blog | Graphite vs. Grafana:</b> http://blog.takipi.com/graphite-vs-grafana-build-the-best-monitoring-architecture-for-your-application/<br>
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>Graphite-Webseite: </b> http://graphiteapp.org/<br>
+                        <!-- <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b> : </b> <br> -->
+                    </p>
+                </div>
+            </div>
+
+            <!-- /END THE FEATURETTES -->
+
+
+            <!-- FOOTER -->
+            <footer>
+                <p class="pull-right"><a href="#">Zum Seitenanfang</a></p>
+                <p>&copy; 2016 berkholz.org &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </footer>
+
+        </div><!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>
